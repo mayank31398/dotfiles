@@ -126,3 +126,9 @@ export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
 
 eval "$(starship init zsh)"
+
+# API keys
+export BITSANDBYTES_NOWELCOME=1
+
+# added by travis gem
+[ ! -s /Users/mayankmishra/.travis/travis.sh ] || source /Users/mayankmishra/.travis/travis.sh
