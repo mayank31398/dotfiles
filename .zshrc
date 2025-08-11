@@ -4,12 +4,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="bullet-train"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="bullet-train"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -77,8 +77,8 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
-[[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
+# [[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
+# [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 
 # User configuration
 
@@ -121,14 +121,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
-export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
-export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
-
-eval "$(starship init zsh)"
-
-# API keys
-export BITSANDBYTES_NOWELCOME=1
-
-# added by travis gem
-[ ! -s /Users/mayankmishra/.travis/travis.sh ] || source /Users/mayankmishra/.travis/travis.sh
+export PATH=/usr/local/bin/code:$PATH
